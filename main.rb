@@ -1,8 +1,13 @@
      
 require 'sinatra'
-require 'sinatra/reloader'
-require 'pry'
 require 'pg'
+
+if development? # only run the code in development
+  require 'sinatra/reloader'
+  require 'pry'
+end
+
+
 
 def run_sql(sql)
   conn = PG.connect(ENV['DATABASE_URL'] || {dbname: 'planets'})
