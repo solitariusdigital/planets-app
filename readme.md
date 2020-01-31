@@ -1,4 +1,4 @@
-# Emotions Tracker
+# Planets App
 
 Click here to access: https://solar-planets-app.herokuapp.com/
 
