@@ -1,0 +1,36 @@
+<h1>Edit Planets</h1>
+
+<form action="/planets/<%= @planet['id']%>" method="post">
+    <input type="hidden" name="_method" value="patch">
+
+    <div class="edit-box">
+        <label for="">Name</label>
+        <input type="text" name="name" value="<%= @planet['name'] %>">
+    </div>
+    <div class="edit-box">
+        <label for="">Diameter</label>
+        <input type="text" name="diameter" value="<%= @planet['diameter'] %>">
+    </div>
+    <div class="edit-box">
+        <label for="">Distance</label>
+        <input type="text" name="distance" value="<%= @planet['distance'] %>">
+    </div>
+    <div class="edit-box">
+        <label for="">Mass</label>
+        <input type="text" name="mass" value="<%= @planet['mass'] %>">
+    </div>
+    <div class="edit-box">
+        <label for="">Moon Count</label>
+        <input type="text" name="moon_count" value="<%= @planet['moon_count'] %>">
+    </div>
+    <div class="edit-box">
+        <label for="">Image URL</label>
+        <input type="text" name="image_url" value="<%= @planet['image_url'] %>">
+    </div>
+    <div class="edit-button">
+        <button>EDIT</button>
+    </div>
+     <div>
+        <a class="anchors" href="/">HOME</a> 
+    </div>
+</form>

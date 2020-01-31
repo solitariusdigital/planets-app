@@ -1,0 +1,34 @@
+<h1>Planets Details</h1>
+
+<% @planets.each do |planet| %>
+
+    <img src="<%= planet['image_url'] %>" alt="">
+    <h2><span class="title">Planet:</span> <%= planet["name"] %></h2>
+    <h2><span class="title">Diameter:</span> <%= planet["diameter"] %></h2>
+    <h2><span class="title">Distance:</span> <%= planet["distance"] %></h2>
+    <h2><span class="title">Mass:</span> <%= planet["mass"] %></h2>
+    <h2><span class="title">Moon Count:</span> <%= planet["moon_count"] %></h2>
+
+    <section class="function">
+    
+        <a class="anchors" href="/">HOME</a> 
+        <a class="anchors" href="/planets/<%= planet['id'] %>/edit">EDIT</a> 
+        <a class="anchors" href="/planets/new">ADD</a> 
+
+        <form class="form" action="/planets/<%= planet['id']%>" method="post">
+
+            <input type="hidden" name="_method" value="delete">
+   
+            <button class="delete">DELETE</button>
+
+        </form>
+        
+    </section>
+
+<% end %>
+
+       
+       
+
+        
+       

@@ -1,0 +1,15 @@
+<h1>Solar System Planets</h1>
+
+<div class="planets">
+    <% @planets.each do |planet| %>
+        <div class="insidebox">
+            <img src="<%= planet['image_url'] %>" alt="">
+
+            <h2>
+                <a class="anchors" href="/planets/<%= planet['id'] %>">
+                    <%= planet['name'] %>
+                </a>
+            </h2>
+        </div>
+    <% end %>
+</div>
