@@ -2,7 +2,7 @@
 
 Click here to access: https://solar-planets-app.herokuapp.com/
 
-A simple CRUD web app on Ruby for adding planets with functionality to add more planets as well as adding details of existing planets.
+A simple CRUD web app on Ruby for adding planets with functionality to add more planets to the system, as well as editing details of existing planets.
 
 # Technologies Used
 
